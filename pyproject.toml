@@ -1,0 +1,15 @@
+[tool.isort]
+profile = "black"
+force_single_line = true
+
+[tool.mypy]
+cache_dir = "/dev/null"
+
+[tool.pylint.messages_control]
+disable = "C0330, C0326, R0201, R1711"
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.pytest.ini_options]
+addopts = "-p no:cacheprovider"
